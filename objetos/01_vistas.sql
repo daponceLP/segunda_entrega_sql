@@ -1,9 +1,8 @@
-
 -- VISTA TOP 5 PRODUCTOS MAS VENDIDOS
 -- Nos permite determinar cuales son los productos que mas se venden
 
 USE supermercado;
-DROP VIEW IF EXISTS top_5_articulos_mas_vendidos
+DROP VIEW IF EXISTS top_5_articulos_mas_vendidos;
 
 CREATE VIEW top_5_articulos_mas_vendidos AS
 SELECT 
@@ -26,7 +25,7 @@ LIMIT 5;
 -- Nos permite ver la informacion mas relevante de los articulos que comercia el negocio.
 
 USE supermercado;
-DROP VIEW IF EXISTS vista_de_articulos
+DROP VIEW IF EXISTS vista_de_articulos;
 
 CREATE VIEW vista_de_articulos AS
 SELECT 
