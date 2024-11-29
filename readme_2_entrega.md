@@ -20,8 +20,7 @@
         articulos: contiene la información de los productos.
         proveedor: relaciona cada artículo con su proveedor.
         categoria_articulo: Clasifica los productos en categorías y subcategorías.
-
-   Motivo:
+    Motivo:
     Ofrecer una visión completa del inventario, para poder analizar el stock y la clasificación de productos de manera eficiente.
 
 ### FUNCIONES
