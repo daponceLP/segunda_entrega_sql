@@ -1,6 +1,6 @@
-## SEGUNDA ENTREGA
+# SEGUNDA ENTREGA
 
-# VISTAS
+### VISTAS
     1.- top_5_articulos_mas_vendidos
 
     Tablas utilizadas:
@@ -24,7 +24,7 @@
    Motivo:
     Ofrecer una visión completa del inventario, para poder analizar el stock y la clasificación de productos de manera eficiente.
 
-# FUNCIONES
+### FUNCIONES
     1.-contar_articulos_con_stock_por_subcategoria
     Motivo:
     Facilitar el análisis del inventario con el fin de determinar cuales son los productos con prioridad de compra.
@@ -33,7 +33,7 @@
     Motivo:
     Determinar qué categoría de ajustes es más frecuente, con esto se busca facilitar el analisis y la mejora de los precesos operativos del supermercado.
 
-# STORED PROCEDURES
+### STORED PROCEDURES
     1.-agregar_proveedor
     Motivo:
     Facilitar la carga de nuevos proveedores y conseguir su ID.
@@ -43,7 +43,7 @@
     Permite realizar un análisis de ventas y evaluación del desempeño comercial en un período definido.
 
 
-# TRIGGERS
+### TRIGGERS
     1.-descontar_ventas_de_stock
     Se activa después de agregarse un nuevo dato en la tabla ventas. Este mecanismo nos permite tener actualizado el stock de la sucursal
     Funcionamiento:
