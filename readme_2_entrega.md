@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 ## SEGUNDA ENTREGA
+=======
+# SEGUNDA ENTREGA
+
+>>>>>>> 4b35050f84ae487fe45a0c58b5617f863d42f2aa
 
 * VISTAS
     1.- top_5_articulos_mas_vendidos
@@ -53,7 +58,10 @@
     Se activa antes de eliminar un registro de la tabla articulos. Su propósito es evitar la eliminación de un producto (sku) que haya tenido ventas previas. Este mecanismo asegura que no se eliminen productos que ya fueron vendidos y perder informacion valiosa que es necesaria para realizar un correcto forecast de ventas.
     Funcionamiento:
     como primera medida verifica cuántas ventas existen para el producto que se intenta eliminar (OLD.sku). Si el producto tiene ventas lanza unl mensaje 'Sku con ventas' para impedir su borrado.
+<<<<<<< HEAD
 
     
 
 
+=======
+>>>>>>> 4b35050f84ae487fe45a0c58b5617f863d42f2aa

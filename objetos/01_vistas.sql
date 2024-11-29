@@ -1,4 +1,3 @@
-
 -- VISTA TOP 5 PRODUCTOS MAS VENDIDOS
 -- Nos permite determinar cuales son los productos que mas se venden
 
