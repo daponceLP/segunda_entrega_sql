@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-## Diseño Orignal de Base de datos DER ONTOLOGICO
+# Base de Datos Supermercado
 
-
-DER WORKBENCH
-![alt text](image.png)
-
-## Base de Datos Supermercado
-=======
 ### Diseño Orignal de Base de datos DER ONTOLOGICO
 ![alt text](der.jpeg)
 
@@ -14,38 +7,28 @@ DER WORKBENCH
 
 ![alt text](der_workbench.png)
 
-### Base de Datos Supermercado
->>>>>>> 4b35050f84ae487fe45a0c58b5617f863d42f2aa
+# Base de Datos Supermercado
 
 Con esta base de datos se busca mejorar el funcionamiento general de un supermercado. A traves de las difentes tablas creadas se busca optimizar las compras en base a un mejor analisis del stock y la ventas. También busco tener un mayor control de los productos que se merman-
 
-## Esquema de la Base de Datos
+# Esquema de la Base de Datos
 
-<<<<<<< HEAD
-# Tabla proveedor
-=======
 ## Tabla proveedor
->>>>>>> 4b35050f84ae487fe45a0c58b5617f863d42f2aa
 Almacena información basica sobre los proveedores.
 
-# Campos:
+### Campos:
 id_proveedor (INT, PK, AUTO_INCREMENT): Identificador único del proveedor.
 nombre_proveedor (VARCHAR(200)): Nombre del proveedor.
 frecuencia_entrega (VARCHAR(200)): Cuantos dias a la semana entrega el proveedor.
 metodo_pago (ENUM): Forma de pago acordado con el proveedor, se utiliza ENUM ya que por lo general todos los proveedores utilizan tipos definidos,  Efectivo, 30 días, 60 días o 90 días.
 
-<<<<<<< HEAD
-# Tabla categoria_articulo
-=======
 ## Tabla categoria_articulo
->>>>>>> 4b35050f84ae487fe45a0c58b5617f863d42f2aa
 Se asignan diferentes categorias preestablecidas a fin de mejorar los analisis y evitar errores de tipeo al momento de cargar un articulo.
 
 # Campos:
 id_categoria_articulo (INT, PK, AUTO_INCREMENT): Identificador único de la categoría de artículo.
 nombre_categoria (ENUM): divide los articulos en 3 grandes campos: Mercaderia General, Alimentos, Frescos
 nombre_subcategoria (ENUM): se hace una division mas precisa segun el tipo de articulo
-
 
 ## Tabla articulos
 Tabla "principal" de la Base de Datos la cual nos trae toda la informacion necesaria de los productos.
@@ -81,8 +64,7 @@ categoria_ajuste (ENUM): Tipo de ajuste.
 ## Tabla ajustes
 Almacena los difernetes ajustes realizados en el inventario.
 
-#Campos:
-
+# Campos:
 id_ajustes (INT, PK, AUTO_INCREMENT): Identificador único del ajuste.
 id_categoria_ajustes (INT, FK): categoria del ajuste.
 fecha (DATETIME): Fecha y hora en que se realiza el ajuste.
@@ -118,8 +100,3 @@ Clientes - Ventas: Cada venta (ventas) tiene un id_clientes que hace referencia 
 Artículos - Ajustes: Cada ajuste (ajustes) tiene un sku que referencia a un artículo en articulos.
 
 Categoría de Ajustes - Ajustes: Cada ajuste (ajustes) tiene un id_categoria_ajustes que apunta a categoria_ajustes.
-<<<<<<< HEAD
-
-Al momento de realizar la documentacion se detectaron algunos campos que podrian ser de utilidad (por ejemplo Fecha de Vencimiento en la Tabla Articulos) los cuales seran agregados en versiones posteriores y actualizaciones de la base de datos.
-=======
->>>>>>> 4b35050f84ae487fe45a0c58b5617f863d42f2aa
