@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS supermercado;
-CREATE DATABASE supermercado;
-USE supermercado;
+DROP DATABASE IF EXISTS supermercado; -- se borra tabla si existe para evitar conflictos
+CREATE DATABASE supermercado; -- creacion de la base de datos
+USE supermercado; -- seleccion de la base de datos a utilizar
 
-
+--creacion de tablas y designacion de PK y FK
 CREATE TABLE proveedor(
    id_proveedor INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
    nombre_proveedor VARCHAR(200),
@@ -17,7 +17,7 @@ CREATE TABLE categoria_articulo(
 
 CREATE TABLE articulos(
      sku VARCHAR(10) NOT NULL PRIMARY KEY,
-	 id_proveedor INT,
+     id_proveedor INT,
      id_categoria_articulo INT,
      ean VARCHAR(13),
      nombre_producto VARCHAR(200),
@@ -26,14 +26,12 @@ CREATE TABLE articulos(
      stock DECIMAL (8,2)
  );
  ALTER TABLE articulos
-	 ADD CONSTRAINT fk_constraint_id_proveedor
-     FOREIGN KEY 
-     (id_proveedor) REFERENCES proveedor(id_proveedor)
+     ADD CONSTRAINT fk_constraint_id_proveedor
+     FOREIGN KEY (id_proveedor) REFERENCES proveedor(id_proveedor)
      ;
  ALTER TABLE articulos
      ADD CONSTRAINT fk_constraint_id_categoria_articulo 
-     FOREIGN KEY
-     (id_categoria_articulo) REFERENCES categoria_articulo(id_categoria_articulo);
+     FOREIGN KEY (id_categoria_articulo) REFERENCES categoria_articulo(id_categoria_articulo);
      
 CREATE TABLE clientes(
     id_clientes INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -56,12 +54,10 @@ CREATE TABLE ajustes(
 );
  ALTER TABLE ajustes
      ADD CONSTRAINT fk_constraint_sku 
-     FOREIGN KEY
-     (sku) REFERENCES articulos(sku);
+     FOREIGN KEY (sku) REFERENCES articulos(sku);
  ALTER TABLE ajustes
      ADD CONSTRAINT fk_constraint_id_categoria_ajustes
-     FOREIGN KEY
-     (id_categoria_ajustes) REFERENCES categoria_ajustes(id_categoria_ajustes);
+     FOREIGN KEY (id_categoria_ajustes) REFERENCES categoria_ajustes(id_categoria_ajustes);
 
 CREATE TABLE ventas(
     factura INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -72,9 +68,7 @@ CREATE TABLE ventas(
 ); 
   ALTER TABLE ventas
      ADD CONSTRAINT fk_constraint2_sku 
-     FOREIGN KEY
-     (sku) REFERENCES articulos(sku);
+     FOREIGN KEY (sku) REFERENCES articulos(sku);
   ALTER TABLE ventas
      ADD CONSTRAINT fk_constraint_id_clientes 
-     FOREIGN KEY
-     (id_clientes) REFERENCES clientes(id_clientes);
+     FOREIGN KEY (id_clientes) REFERENCES clientes(id_clientes);
