@@ -2,7 +2,7 @@
 ![alt text](der.jpeg)
 
 DER WORKBENCH
-![alt text](image.png)
+![alt text](der_workbench.png)
 
 ## Base de Datos Supermercado
 
