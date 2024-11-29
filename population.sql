@@ -1,5 +1,5 @@
-## Para la generacion de datos se utiliza la pagina https://claude.ai/, solocitando 20 datos para cada tabla.
-## Los datos fueron revisados y corregidos manualmente a fin de evitar duplicados y darle sentido a las categorias y subcategorias.
+-- Para la generacion de datos se utiliza la pagina https://claude.ai/, solocitando 20 datos para cada tabla.
+-- Los datos fueron revisados y corregidos manualmente a fin de evitar duplicados y darle sentido a las categorias y subcategorias.
 
 -- Datos para tabla proveedor
 INSERT INTO proveedor (nombre_proveedor, frecuencia_entrega, metodo_pago)
