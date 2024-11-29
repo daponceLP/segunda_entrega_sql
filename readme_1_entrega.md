@@ -16,7 +16,7 @@ Con esta base de datos se busca mejorar el funcionamiento general de un supermer
 ## Tabla proveedor
 Almacena información basica sobre los proveedores.
 
-### Campos:
+# Campos:
 id_proveedor (INT, PK, AUTO_INCREMENT): Identificador único del proveedor.
 nombre_proveedor (VARCHAR(200)): Nombre del proveedor.
 frecuencia_entrega (VARCHAR(200)): Cuantos dias a la semana entrega el proveedor.
