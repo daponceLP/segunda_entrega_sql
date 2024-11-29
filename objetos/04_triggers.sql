@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 -- Descontar articulos vendidos
 
 USE supermercado
