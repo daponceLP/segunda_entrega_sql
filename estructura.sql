@@ -21,7 +21,8 @@ CREATE TABLE articulos(
      id_categoria_articulo INT,
      ean VARCHAR(13),
      nombre_producto VARCHAR(200),
-     costo DECIMAL (5,2)
+     costo DECIMAL (5,2),
+     iva DECIMAL (2,2),
      stock DECIMAL (8,2)
  );
  ALTER TABLE articulos
