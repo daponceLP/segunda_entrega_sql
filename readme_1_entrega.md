@@ -1,7 +1,7 @@
-## Diseño Orignal de Base de datos DER ONTOLOGICO
+### Diseño Orignal de Base de datos DER ONTOLOGICO
 ![alt text](der.jpeg)
 
-##DER WORKBENCH
+###DER WORKBENCH
 
 ![alt text](der_workbench.png)
 
@@ -11,7 +11,7 @@ Con esta base de datos se busca mejorar el funcionamiento general de un supermer
 
 ## Esquema de la Base de Datos
 
-### Tabla proveedor
+## Tabla proveedor
 Almacena información basica sobre los proveedores.
 
 # Campos:
