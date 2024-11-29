@@ -1,5 +1,6 @@
 # SEGUNDA ENTREGA
 
+
 * VISTAS
     1.- top_5_articulos_mas_vendidos
 
